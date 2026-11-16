@@ -11,8 +11,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '25'
-      - run: mvn -B package -f IceMinecarts_Plugin_Projekt/pom.xml
+      - run: |
+          POM=$(find . -name pom.xml -path '*v1.3*' | head -n 1)
+          echo "Baue: $POM"
+          mvn -B package -f "$POM"
       - uses: actions/upload-artifact@v4
         with:
           name: IceMinecarts
-          path: IceMinecarts_Plugin_Projekt/target/IceMinecarts.jar
+          path: '**/target/IceMinecarts.jar'
