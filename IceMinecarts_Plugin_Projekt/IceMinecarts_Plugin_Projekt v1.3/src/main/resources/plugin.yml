@@ -1,0 +1,14 @@
+name: IceMinecarts
+version: 1.3.0
+main: de.ice.minecarts.IceMinecarts
+api-version: "26.3"
+description: Macht Minecarts zu ICE-Wagen (Ofen = Front, normal = Mittelwagen, Truhe = Ende).
+commands:
+  iceminecarts:
+    description: Verwaltung von IceMinecarts
+    usage: /iceminecarts reload|uncouple
+    permission: iceminecarts.admin
+permissions:
+  iceminecarts.admin:
+    description: Darf /iceminecarts reload nutzen
+    default: op
