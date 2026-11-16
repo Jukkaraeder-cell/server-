@@ -1,0 +1,17 @@
+# Größe der Wagen (1.0 = ein Wagen ist genau 1 Block lang)
+scale: 1.0
+
+# Modell nach oben (+) oder unten (-) schieben, in Blöcken
+y-offset: 0.0
+
+# Dreht die Wagen, falls die Nase in die falsche Richtung zeigt.
+# Zeigt die Nase nach hinten statt nach vorn: auf 180 stellen.
+yaw-offset: 0.0
+
+# Welches Modell welche Minecart-Art bekommt: front, middle, end oder vanilla
+# (vanilla = normales Minecart-Aussehen). Nicht aufgeführte Arten (Trichter,
+# TNT, Spawner, Befehlsblock) bleiben normale Minecarts.
+car-models:
+  furnace_minecart: front
+  minecart: middle
+  chest_minecart: end
